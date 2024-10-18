@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    body {
+        background-color: #fff;
+        /* Fundo branco suave */
+        color: #000080;
+        /* Texto azul escuro */
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #000080;
+        
+
+        /* Azul escuro */
+    }
+
+    .navbar .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar .nav-links a {
+        color: #000080;
+        /* Azul escuro */
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .navbar .demo-btn {
+        background-color: #0044cc;
+        /* Azul */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #ffffff;
+        /* Branco */
+        cursor: pointer;
+        border-radius: 5px;
+        position: fixed;
+        top: 39px;
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .text-content {
+        max-width: 500px;
+    }
+
+    .text-content h1 {
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        color: #0044cc;
+        /* Azul */
+    }
+
+    .text-content p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #000080;
+        /* Azul escuro */
+    }
+
+    .app-buttons {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .app-buttons img {
+        width: 150px;
+    }
+
+    .rating {
+        font-size: 16px;
+        color: #555555;
+        /* Cinza escuro */
+    }
+
+    .phone-mockup img {
+        width: 350px;
+    }
+
+    .theme-toggle-btn {
+        background-color: #0044cc;
+        /* Azul */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 5px;
+        position: fixed;
+        top: 39px;
+        left: 20px;
+    }
+
+    .dark-mode .theme-toggle-btn {
+        background-color: #f1f1f1;
+        color: #0044cc;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">Softway</div>
+            <ul class="nav-links">
+                <li><a href="#">Aprender a Usar</a></li>
+                <li><a href="Aqui vai o QrCode">Aplicativo</a></li>
+                <li><a href="Foto Carrosel do android e iphone e texto falando sobre.">Sobre</a></li>
+                <li><a href="./Screens/Login.html">Login</a></li>
+                <li><button class="demo-btn" href="Video do App funcionando.">Veja uma Demonstração</button></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <div class="text-content">
+                <h1>Mais Opções de pagamentos <br> Melhores que Dinheiro</h1>
+                <p>Venha conhecer o projeto da expotec com acessibilidade e acesso para todos os publicos!.</p>
+                <div class="app-buttons">
+                    <a href="#"><img src="images.png" alt="App Store"></a>
+                    <a href="#"><img src="play.png" alt="Google Play"></a>
+                </div>
+                <div class="rating">Excellent 4.9 out of 5 ★★★★★</div>
+            </div>
+
+            <div class="phone-mockup">
+                <img src="cell.jpeg" alt="Phone Mockup">
+            </div>
+        </div>
+    </div>
+    <button class="theme-toggle-btn" onclick="toggleTheme()">Modo Escuro</button>
+
+    <script src="script.js">  //nao funciona ainda mas tem que fazer funcionar.
+    //funçao para alternar entre o modo escuro ao modo claro 
+        function toggleTheme() {
+            const body = document.body;
+            const themeButton = document.querySelector('.theme-toggle-btn');
+
+            body.classList.toggle('dark-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                themeButton.textContent = 'Modo Claro';
+            } else {
+                themeButton.textContent = 'Modo Escuro';
+            }
+        }
+    </script>
+</body>
+
+</html>
+s
